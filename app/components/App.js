@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
 class App extends Component {
+  sayHello() {
+    return `${this.props.values.hello} ${this.props.values.world}`;
+  }
+
   render() {
     return (
-      <h1>{ `${this.props.values.hello} ${this.props.values.world}!` }</h1>
+      <h1>{this.sayHello()}!</h1>
     );
   }
 }

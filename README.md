@@ -1,27 +1,27 @@
 # React boilerplate
 
-React boilerplate is a super minimal, unopinionated [React](https://facebook.github.io/react/) boilerplate with minimal [webpack](https://webpack.github.io/) configuration (that you can actually read and understand). It comes with all the basic features such as linting and hot reloading using web-pack-dev server.
+React boilerplate is a super basic, unopinionated [React](https://facebook.github.io/react/) boilerplate with minimal [webpack](https://webpack.github.io/) configuration (that you can actually read and understand). It comes with all the bare minimum such as linting, hot reloading and web-pack-dev server.
 
 ## Features
 
 * React
 * ES6 (es2015) using babel
-* Linting using eslint
+* Linting using eslint (airbnb config)
 
 ## Installation
 
 ```
 npm install
+npm build # creates the dist directory, read note below
 npm start
 open http://localhost:8080
 ```
 
-## CLI
+*Note: You need to create the `dist` directory, because webpack-dev-server is configured to serve dist directory.*
 
-* `npm start` starts the development server. Navigate to `http://localhost:8080` and start working on your project
+## Tasks
+
+* `npm start` starts the development server. Navigate to [http://localhost:8080](http://localhost:8080) and start working on your project
 * `npm run lint` lints your .js files
-* `npm run build` builds/bundles your app at the `./dist/bundle.js`
-
-## TODO
-
-* Hot reload HTML as well (maybe use HtmlWebpackPlugin)
+* `npm run watch` builds/bundles your app on change
+* `npm run build` builds/bundles your app to the `./dist` directory`
