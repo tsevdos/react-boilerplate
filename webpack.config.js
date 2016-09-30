@@ -8,7 +8,7 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   devtool: 'eval',
-  entry: './app/index.js',
+  entry: './app/index.jsx',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -17,7 +17,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
         exclude: /node_modules/,
         loader: "babel",
         query: {
@@ -27,7 +27,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['', '.js', 'jsx'],
+    extensions: ['', '.js', '.jsx'],
     modulesDirectories: ['node_modules']
   },
   plugins: [HTMLWebpackPluginConfig]
