@@ -14,7 +14,7 @@ React boilerplate is a super basic, unopinionated [React](https://facebook.githu
 
 ```
 npm install
-npm build # creates the dist directory, read note below
+npm run build # creates the dist directory, read note below
 npm start
 open http://localhost:8080
 ```
@@ -25,5 +25,4 @@ open http://localhost:8080
 
 * `npm start` starts the development server. Navigate to [http://localhost:8080](http://localhost:8080) and start working on your project
 * `npm run lint` lints your .js files
-* `npm run watch` builds/bundles your app on change
 * `npm run build` builds/bundles your app to the `./dist` directory`

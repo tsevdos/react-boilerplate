@@ -12,7 +12,13 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: "/assets/"
+    publicPath: "http://localhost:8080/dist/"
+  },
+  devServer: {
+    hot: true,
+    inline: true,
+    port: 8080,
+    historyApiFallback: true,
   },
   module: {
     loaders: [
