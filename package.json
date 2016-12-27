@@ -1,6 +1,6 @@
 {
   "name": "react-boilerplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A really simple Boilerplate for ReactJS",
   "scripts": {
     "start": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cache --content-base ./dist",
